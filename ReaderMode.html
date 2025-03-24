@@ -50,6 +50,19 @@
     </style>
 </head>
 <body>
+    <h1>Your User Agent</h1>
+    <div>
+        <p id="user-agent"></p>
+
+        <script>
+            // Fetching the user agent string
+            const userAgent = navigator.userAgent;
+
+            // Displaying the user agent string in the paragraph element with id "user-agent"
+            document.getElementById('user-agent').textContent = userAgent;
+        </script>
+     </div>
+    <div>
     <main>
         <article>
             <h2>Article 1: Reader Mode</h2>
@@ -62,6 +75,17 @@
             <p>With these simple steps, you can make the most of your reading experience in the modern world.</p>
         </article>
     </main>
+    <p>
+    
+    <button id="openTabButton">Open New Tab</button>
+
+    <script>
+      document.getElementById("openTabButton").addEventListener("click", function() {
+        window.open("https://www.example.com", "_blank");
+      });
+    </script>
+    </p>
+    <div>
 
     <footer>
         <p>&copy; 2025 Web Test All rights reserved.</p>
